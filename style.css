@@ -1,0 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --color1: blueviolet;
+  --color1: rgb(55, 55, 114);
+}
+.navbar-cont{
+    height:10vh;
+    width: 100%;
+    padding: 10px;
+    /* margin: 10px; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    gap: 50px;
+}
+.navbar-left{
+  width: 30vw;
+  display: flex;
+  align-items: center; 
+  gap: 1rem;
+}
+.logo{
+ height: 50px;
+ width: 50px;
+ border-radius: 50%;
+ background-color: blueviolet;
+}
+.logo-text{
+  font-size: 23px;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar-right{
+ display: flex;
+  gap: 30px;
+}
+.navlinks{
+  display: flex;
+  gap: 70px;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 10px;
+}
+.btn{
+  height: 2.5rem;
+  width: 10rem;
+  color: whitesmoke;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  display: inline-block;
+  padding: 10px 10px;
+  cursor: pointer;
+  
+}
+.hero{
+  height: 80vh;
+  width: 100vw;
+  background-image: url(images/backdrop1.jpg), linear-gradient( 180deg, blueviolet, rgb(91, 91, 155) );
+  background-repeat: no-repeat;
+  background-size: cover;
+   
+
+}
+ 
