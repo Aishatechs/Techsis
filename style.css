@@ -262,21 +262,6 @@
   align-items: center;
   /* position: relative; */
 }
-/* .about-text {
-  height: 70vh;
-  width: 55vh;
-  padding: 20px 20px;
-  border-radius: 12%;
-  background-color: whitesmoke;
-  text-align: center;
-  align-items: center;
-  position: absolute;
-  right: 600px;
-  top: 70px;
-  color: white;
-  background-color: rgba(124, 72, 152, 0.118);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-} */
 .sp {
   font-weight: 600;
   font-size: 45px;
@@ -293,7 +278,7 @@
   /* height: vh; */
   width: 100%;
   position: absolute;
-  bottom:120px;
+  bottom: 120px;
   font-size: 20px;
   font-weight: 300;
   display: flex;
@@ -332,7 +317,7 @@
 }
 /* Contact Us Page */
 .hero {
-  height: 80vh;
+  height: 80%;
   width: 100vw;
   background-color: white;
   padding: 20px;
@@ -427,7 +412,7 @@ button:hover {
   width: 50px;
   border-radius: 50%;
   background-color: white;
-  padding: 11px;
+  padding: 10px;
 }
 .heading {
   height: 30vh;
@@ -446,7 +431,7 @@ button:hover {
   height: 100%;
   width: 100vw;
   background-color: white;
-  padding-bottom:40px ;
+  padding-bottom: 40px;
   /* padding: 50px; */
   /* display: flex;
   align-items: center;
@@ -465,25 +450,102 @@ button:hover {
   justify-content: space-between;
   align-items: center;
 }
+.collab-box :hover {
+    animation: moveAround 2s infinite ease-in-out;
+}
 .collab-info-cont {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
 }
-.collab-pic {
+.collab-pic1 {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  /* background-color: #480069; */
-  /* background-image: url(images/IMG_6081.JPG);
-  background-size: contain; */
+  background-image: url(images/Aisha.jpg);
+  background-size: cover;
+  border: 2px solid #480069;
+}
+.collab-pic2 {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: url(images/Derin.jpg);
+  background-size: cover;
+  border: 2px solid #480069;
+}
+.collab-pic3 {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: url(images/Precious.jpg);
+  background-size: cover;
+  border: 2px solid #480069;
+}
+.collab-pic4 {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: url(images/Somah.jpg);
+  background-size: cover;
+  border: 2px solid #480069;
+}
+.collab-pic5 {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: url(images/Jacob.jpg);
+  background-size: cover;
+  border: 2px solid #480069;
+}
+.collab-pic6 {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: url(images/Kiran02.jpg);
+  background-size: cover;
+  border: 2px solid #480069;
+}
+.collab-pic7 {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: url(images/Nkechii.jpg);
+  background-size: cover;
+  border: 2px solid #480069;
+}
+.collab-pic8 {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: url(images/Ayo.jpg);
+  background-size: cover;
+  border: 2px solid #480069;
+}
+.collab-pic9 {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: url(images/Somtoo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid #480069;
+}
+ .collab-pic10 {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: url(images/Kamsi.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid #480069;
 }
 .collab-text {
   height: 200px;
   width: 250px;
   color: #480069;
   font-size: 20px;
-  font-weight: 550;
+  /* font-weight: 550; */
   display: flex;
   flex-direction: column;
   align-items: center;
