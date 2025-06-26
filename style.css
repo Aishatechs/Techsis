@@ -6,6 +6,7 @@
   list-style: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 /* :root {
   --color1: blueviolet;
@@ -147,6 +148,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 5px;
+}
+.box-link {
+  text-decoration: none;
+  color:blueviolet;
 }
 .mid .box-cont .box {
   height: 40vh;
