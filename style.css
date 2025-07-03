@@ -172,7 +172,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.313rem;
-  padding: 0.625rem;
+  padding: 0.5rem;
 }
 .box-cont .box-details{
   text-align: center;
@@ -182,7 +182,7 @@
   color: blueviolet;
 }
 .mid .box-cont .box {
-  height: 40vh;
+  height: 35vh;
   width: 20vw;
   border-radius: 15px;
   background-color: whitesmoke;
@@ -192,7 +192,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding: 0 2rem;
+  padding: 0 3rem;
   --c: #480069;
   --b: 0.1em;
   --d: 1.25rem;
