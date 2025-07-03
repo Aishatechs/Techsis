@@ -25,10 +25,10 @@
   display: flex;
   align-items: center;
 }
-.logo-img {
-  height: 4.37rem;
-  width: 8.13rem;
-}
+/* .logo-img{
+  height: 3rem;
+  width: 8.125rem;
+ } */
 .navbar-right {
   display: flex;
   gap: 2rem;
