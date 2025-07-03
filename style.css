@@ -302,7 +302,7 @@
 }
 /* Footer */
 .footer {
-  height: 20vh;
+  height: 35vh;
   width: 100%;
   /* background-color: #480069; */
   background-color: whitesmoke;
@@ -317,6 +317,7 @@
   font-weight: 300;
   display: flex;
   align-items: center;
+  padding-bottom: 10%;
   justify-content: center;
   gap: 3rem;
 }
@@ -324,10 +325,11 @@
   height: 5vh;
   width: 100%;
   position: absolute;
-  top: 4.8rem;
+  top: 6rem;
   font-size: 20px;
   font-weight: 300;
   display: flex;
+  margin-bottom: 5%;
   align-items: center;
   justify-content: center;
   gap: 5rem;
@@ -336,15 +338,16 @@
 .line {
   border: none;
   border-top: 1px solid #480069;
-  width: 160vh;
+  width: 100%;
   display: flex;
   
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 7rem;
+  top: 10rem;
 }
 .footer-text {
+  padding-top: 5%;
   text-align: center;
   display: flex;
   justify-content: center;
