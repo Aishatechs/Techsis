@@ -14,43 +14,55 @@
 } */
 .navbar-cont {
   height: 13vh;
-  width: 100%;
-  padding: 10px;
-  /* margin: 10px; */
-  display: flex;
-  align-content: center;
-  justify-content: center;
+  padding: 0 5rem;
   background-color: whitesmoke;
-  gap: 50px;
-}
-.navbar-left {
-  width: 30vw;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: space-between;
+  position: relative;
 }
-.logo {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: blueviolet;
+.navbar-left {
+  display: flex;
+  align-items: center;
 }
-.logo-text {
-  font-size: 23px;
-  font-weight: 600;
+.logo-img {
+  height: 4.37rem;
+  width: 8.13rem;
 }
 .navbar-right {
   display: flex;
-  gap: 30px;
-  padding-top: 20px;
+  gap: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+.navbar-right.mobile {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 70vw;
+  background-color: whitesmoke;
+  padding: 2rem;
+  transform: translateX(100%);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+ 
+.navbar-right.mobile.active {
+  transform: translateX(0);
 }
 .navlinks {
   display: flex;
-  gap: 70px;
-  padding: 10px;
+  gap: 1.5rem;
 }
 .navlinks li a {
-  color: black;
+  text-decoration: none;
+  color: inherit;
+}
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
 }
 .navigations {
   color: #0000;
@@ -72,20 +84,29 @@
   border-bottom: 1px solid blueviolet;
 } */
 .btn {
-  height: 2.5rem;
   /* width: 10rem; */
   background-color: #480069;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  display: inline-block;
-  padding: 10px 10px;
+  padding: 0.625rem 0.625rem;
   cursor: pointer;
 }
 .btn a {
   color: white;
 }
+
+@media (max-width: 760px) {
+  .navbar-right {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+
 .background {
   height: 80vh;
   width: 100vw;
@@ -103,13 +124,15 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 170px;
-  font-weight: 520;
+  top: 10.63rem;
+  width: 100%;
+  text-align: center;
+  /* font-weight: 520; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 80px;
+  font-size: 5rem;
   color: whitesmoke;
   overflow: hidden;
-  border-right: 0.15em solid orange;
+  /* border-right: 0.15em solid orange; */
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
@@ -147,11 +170,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5px;
+  gap: 0.313rem;
 }
 .box-link {
   text-decoration: none;
-  color:blueviolet;
+  color: blueviolet;
 }
 .mid .box-cont .box {
   height: 40vh;
@@ -167,7 +190,7 @@
   padding: 0 2rem;
   --c: #480069;
   --b: 0.1em;
-  --d: 20px;
+  --d: 1.25rem;
 
   --_s: calc(var(--d) + var(--b));
 
@@ -223,9 +246,9 @@
   position: absolute;
   background-color: white;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  padding: 10px;
-  margin-top: 10px;
+  border-radius: ;
+  padding:  0.625rem;
+  margin-top:0.625rem ;
   z-index: 1000;
 }
 
@@ -283,7 +306,7 @@
   /* height: vh; */
   width: 100%;
   position: absolute;
-  bottom: 120px;
+  bottom: 7.5rem;
   font-size: 20px;
   font-weight: 300;
   display: flex;
@@ -310,13 +333,13 @@
   border-top: 1px solid #480069;
   width: 160vh;
   position: absolute;
-  top: 150px;
-  left: 200px;
+  top: 9.375rem;
+  left: 12.5;
 }
 .footer-text {
   position: relative;
   /* top: 5px; */
-  left: 500px;
+  left: 31.25rem;
   color: #480069;
   font-size: 15px;
 }
@@ -325,7 +348,7 @@
   height: 80%;
   width: 100vw;
   background-color: white;
-  padding: 20px;
+  padding: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: s;
@@ -333,7 +356,7 @@
 .left-hero {
   height: 80vh;
   width: 50vw;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: #480069;
   border-color: #480069;
 }
@@ -354,7 +377,7 @@ label {
 }
 input,
 textarea {
-  padding: 10px;
+  padding: 0.625;
   margin-bottom: 15px;
   border: none;
   border-radius: 4px;
@@ -370,8 +393,8 @@ textarea {
 button {
   background-color: black;
   color: white;
-  width: 100px;
-  padding: 10px;
+  width: 6.25rem;
+  padding: 0.625rem;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -383,7 +406,7 @@ button:hover {
 .right-hero {
   height: 80vh;
   width: 50vw;
-  padding: 30px;
+  padding: 1.875rem;
   background-color: #480069;
   display: flex;
   flex-direction: column;
@@ -406,18 +429,18 @@ button:hover {
   gap: 1rem;
 }
 .logo-footer {
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
   border-radius: 50%;
   background-color: white;
-  padding: 8px;
+  padding: 0.5rem;
 }
 .logo-footer1 {
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
   border-radius: 50%;
   background-color: white;
-  padding: 10px;
+  padding: 0.625rem;
 }
 .heading {
   height: 30vh;
@@ -436,7 +459,7 @@ button:hover {
   height: 100%;
   width: 100vw;
   background-color: white;
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
   /* padding: 50px; */
   /* display: flex;
   align-items: center;
@@ -450,13 +473,13 @@ button:hover {
   width: 30vw;
   background-color: whitesmoke;
   border-radius: 12%;
-  padding: 10px;
+  padding: 0.625rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .collab-box :hover {
-    animation: moveAround 2s infinite ease-in-out;
+  animation: moveAround 2s infinite ease-in-out;
 }
 .collab-info-cont {
   display: grid;
@@ -464,81 +487,81 @@ button:hover {
   gap: 3rem;
 }
 .collab-pic1 {
-  height: 200px;
-  width: 200px;
+  height: 12.5rem;
+  width: 12.5rem;
   border-radius: 50%;
   background-image: url(images/Aisha.jpg);
   background-size: cover;
   border: 2px solid #480069;
 }
 .collab-pic2 {
-  height: 200px;
-  width: 200px;
+  height: 12.5rem;
+  width: 12.5rem;
   border-radius: 50%;
   background-image: url(images/Derin.jpg);
   background-size: cover;
   border: 2px solid #480069;
 }
 .collab-pic3 {
-  height: 200px;
-  width: 200px;
+  height: 12.5rem;
+  width: 12.5rem;
   border-radius: 50%;
   background-image: url(images/Precious.jpg);
   background-size: cover;
   border: 2px solid #480069;
 }
 .collab-pic4 {
-  height: 200px;
-  width: 200px;
+  height: 12.5rem;
+  width: 12.5rem;
   border-radius: 50%;
   background-image: url(images/Somah.jpg);
   background-size: cover;
   border: 2px solid #480069;
 }
 .collab-pic5 {
-  height: 200px;
-  width: 200px;
+  height: 12.5rem;
+  width: 12.5rem;
   border-radius: 50%;
   background-image: url(images/Jacob.jpg);
   background-size: cover;
   border: 2px solid #480069;
 }
 .collab-pic6 {
-  height: 200px;
-  width: 200px;
+  height: 12.5rem;
+  width: 12.5rem;
   border-radius: 50%;
   background-image: url(images/Kiran02.jpg);
   background-size: cover;
   border: 2px solid #480069;
 }
 .collab-pic7 {
-  height: 200px;
-  width: 200px;
+  height: 12.5rem;
+  width: 12.5rem;
   border-radius: 50%;
   background-image: url(images/Nkechii.jpg);
   background-size: cover;
   border: 2px solid #480069;
 }
 .collab-pic8 {
-  height: 200px;
-  width: 200px;
+  height: 12.5rem;
+  width: 12.5rem;
   border-radius: 50%;
   background-image: url(images/Ayo.jpg);
   background-size: cover;
   border: 2px solid #480069;
 }
 .collab-pic9 {
-  height: 200px;
-  width: 200px;
+  height: 12.5rem;
+  width: 12.5rem;
   border-radius: 50%;
   background-image: url(images/Somtoo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border: 2px solid #480069;
 }
- .collab-pic10 {
-  height: 200px;
-  width: 200px;
+.collab-pic10 {
+  height: 12.5rem;
+  width: 12.5rem;
   border-radius: 50%;
   background-image: url(images/Kamsi.jpg);
   background-size: cover;
@@ -546,8 +569,8 @@ button:hover {
   border: 2px solid #480069;
 }
 .collab-text {
-  height: 200px;
-  width: 250px;
+  height: 12.5rem;
+  width: 15.63rem;
   color: #480069;
   font-size: 20px;
   /* font-weight: 550; */
