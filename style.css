@@ -312,7 +312,7 @@
   /* height: vh; */
   width: 100%;
   position: absolute;
-  bottom: 2.5rem;
+  top: 1.2rem;
   font-size: 20px;
   font-weight: 300;
   display: flex;
@@ -323,9 +323,8 @@
 .footer-link {
   height: 5vh;
   width: 100%;
-
   position: absolute;
-  bottom: 65px;
+  top: 4.8rem;
   font-size: 20px;
   font-weight: 300;
   display: flex;
@@ -339,8 +338,8 @@
   border-top: 1px solid #480069;
   width: 160vh;
   position: absolute;
-  top: 9.375rem;
-  left: 12.5;
+  top: 7.5rem;
+  left: 12.5rem;
 }
 .footer-text {
   position: relative;
