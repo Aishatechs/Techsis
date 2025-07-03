@@ -193,7 +193,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding:  2rem;
+  padding: 0 2rem;
   --c: #480069;
   --b: 0.1em;
   --d: 1.25rem;
@@ -312,7 +312,7 @@
   /* height: vh; */
   width: 100%;
   position: absolute;
-  bottom: 7.5rem;
+  bottom: 2.5rem;
   font-size: 20px;
   font-weight: 300;
   display: flex;
