@@ -177,6 +177,7 @@
 .box-cont .box-details{
   text-align: center;
 }
+ 
 .box-link {
   text-decoration: none;
   color: blueviolet;
@@ -192,7 +193,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding: 0 2rem;
+  padding:  2rem;
   --c: #480069;
   --b: 0.1em;
   --d: 1.25rem;
@@ -301,7 +302,7 @@
 }
 /* Footer */
 .footer {
-  height: 25vh;
+  height: 20vh;
   width: 100%;
   /* background-color: #480069; */
   background-color: whitesmoke;
